@@ -1,0 +1,34 @@
+.deco {
+  background-color: #176b87;
+  border-radius: 0 10em 0 0;
+  flex: 1 0 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.respond {
+  flex: 1 0 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ececec;
+  border-radius: 0 0 10em 0;
+}
+
+.inline {
+  display: inline;
+  padding: 10px;
+}
+
+.boarding {
+  font-size: 2.5rem;
+  color: #eef5ff;
+  flex: 0 0 60%;
+}
+
+.airline {
+  flex: 0 0 30%;
+  font-size: 1.5rem;
+  color: #eef5ff;
+}

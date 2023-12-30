@@ -1,0 +1,7 @@
+.all {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 20%;
+  border: 2px dotted red;
+}
