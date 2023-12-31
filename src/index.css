@@ -1,0 +1,9 @@
+/* CSS reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: 0;
+}

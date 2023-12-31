@@ -4,8 +4,8 @@ import { fakeEvent } from "../../App";
 export function EventDate() {
   return (
     <div className={styles.eventDate}>
-      <h2>DATE: {fakeEvent.eveDate}</h2>
-      <h2>TIME: {fakeEvent.eveTime}</h2>
+      <p>DATE: {fakeEvent.eveDate}</p>
+      <p>TIME: {fakeEvent.eveTime}</p>
     </div>
   );
 }

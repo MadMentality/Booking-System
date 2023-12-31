@@ -1,4 +1,4 @@
-import AppCSS from "./components/App.module.css";
+import styles from "./App.module.css";
 import InfoSectionCSS from "./components/InfoSection.module.css";
 import RespondSectionCSS from "./components/RespondSection.module.css";
 import InfoDetailsCSS from "./components/InfoDetails.module.css";
@@ -29,27 +29,29 @@ function App() {
   }
 
   return (
-    <div className={AppCSS.background}>
-      <div className={InfoSectionCSS.all}>
-        <div className={InfoDetailsCSS.deco}>
-          <p className={RespondDetailsCSS.boarding}>
-            ✈ You've been invited to fly with <br></br> Friendship Airline
-          </p>
+    <div className={styles.background}>
+      <div className={styles.root}>
+        <div className={InfoSectionCSS.all}>
+          <div className={InfoDetailsCSS.deco}>
+            <p className={RespondDetailsCSS.boarding}>
+              ✈ You've been invited to fly with <br></br> Friendship Airline
+            </p>
+          </div>
+          <div className={InfoDetailsCSS.info}>
+            <EventDate />
+            <EventDetails />
+            <Attendents newFakeAttendents={newFakeAttendents} />
+          </div>
         </div>
-        <div className={InfoDetailsCSS.info}>
-          <EventDate />
-          <EventDetails />
-          <Attendents newFakeAttendents={newFakeAttendents} />
+        <div className={RespondSectionCSS.all}>
+          <div className={RespondDetailsCSS.deco}>
+            <p className={RespondDetailsCSS.airline}>
+              Boarding Pass <br></br>Friendship Airline ✈
+            </p>
+          </div>
+          <Attend onNewAttendent={handleNewAttendent} />
         </div>
-      </div>
-      <div className={RespondSectionCSS.all}>
-        <div className={RespondDetailsCSS.deco}>
-          <p className={RespondDetailsCSS.airline}>
-            Boarding Pass <br></br>Friendship Airline ✈
-          </p>
         </div>
-        <Attend onNewAttendent={handleNewAttendent} />
-      </div>
     </div>
   );
 }
@@ -57,8 +59,8 @@ function App() {
 function EventDetails() {
   return (
     <div className={InfoDetailsCSS.eventDetails}>
-      <h2>EVENT NAMME: {fakeEvent.eveName}</h2>
-      <h2>LOCATION: {fakeEvent.eveLocation}</h2>
+      <p>EVENT NAMME: {fakeEvent.eveName}</p>
+      <p>LOCATION: {fakeEvent.eveLocation}</p>
     </div>
   );
 }
@@ -66,13 +68,13 @@ function EventDetails() {
 function Attendents({ newFakeAttendents }) {
   return (
     <div className={InfoDetailsCSS.attendents}>
-      <h2>BOARDING LIST:</h2>
+      <p>BOARDING LIST:</p>
       <div>
         {newFakeAttendents.map((ppl) => (
           <List ppl={ppl.name} key={ppl.name} />
         ))}
       </div>
-      <h2>NOT YET RESPONDED:</h2>
+      <p>NOT YET RESPONDED:</p>
       <div>
         {newFakeAttendents
           .filter((ppl) => !ppl.responsed)
@@ -85,7 +87,7 @@ function Attendents({ newFakeAttendents }) {
 }
 
 function List({ ppl }) {
-  return <h3 className={RespondDetailsCSS.inline}>‣{ppl}</h3>;
+  return <p className={RespondDetailsCSS.inline}>‣{ppl}</p>;
 }
 //!!!!!!!!!!!!!!
 function Attend({ onNewAttendent }) {
@@ -113,8 +115,9 @@ function Attend({ onNewAttendent }) {
   return (
     <div className={RespondDetailsCSS.respond}>
       <div>
-        <h2>Enter Your Name:</h2>
+        <label htmlFor="name">Enter Your Name:</label>
         <input
+        id="name"
           type="text"
           placeholder="Your Name"
           value={magaState.name}
@@ -123,8 +126,10 @@ function Attend({ onNewAttendent }) {
         ></input>
       </div>
       <div>
-        <h2>Yes, I will attend the event</h2>
+        <p>Will you attend this event?</p>
+        <label htmlFor="attending-go">Yes</label>
         <input
+        id="attending-go"
           type="radio"
           name="attending"
           value={"going"}
@@ -133,8 +138,9 @@ function Attend({ onNewAttendent }) {
         ></input>
       </div>
       <div>
-        <h2>No, I will not attend this event</h2>
+        <label htmlFor="attending-no">No</label>
         <input
+          id="attending-no"
           type="radio"
           name="attending"
           value={"not_going"}
