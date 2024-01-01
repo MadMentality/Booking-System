@@ -54,6 +54,8 @@ function App() {
   );
 }
 
+//new line
+
 function EventDetails() {
   return (
     <div className={InfoDetailsCSS.eventDetails}>
