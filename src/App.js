@@ -1,3 +1,4 @@
+//change
 import styles from "./App.module.css";
 import InfoSectionCSS from "./components/InfoSection.module.css";
 import RespondSectionCSS from "./components/RespondSection.module.css";
@@ -51,7 +52,7 @@ function App() {
           </div>
           <Attend onNewAttendent={handleNewAttendent} />
         </div>
-        </div>
+      </div>
     </div>
   );
 }
@@ -117,7 +118,7 @@ function Attend({ onNewAttendent }) {
       <div>
         <label htmlFor="name">Enter Your Name:</label>
         <input
-        id="name"
+          id="name"
           type="text"
           placeholder="Your Name"
           value={magaState.name}
@@ -129,7 +130,7 @@ function Attend({ onNewAttendent }) {
         <p>Will you attend this event?</p>
         <label htmlFor="attending-go">Yes</label>
         <input
-        id="attending-go"
+          id="attending-go"
           type="radio"
           name="attending"
           value={"going"}
