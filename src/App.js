@@ -36,8 +36,8 @@ function App() {
       <div className={styles.root}>
         <div className={InfoSectionCSS.all}>
           <div className={InfoDetailsCSS.deco}>
-            <p className={RespondDetailsCSS.boarding}>
-              ✈ You've been invited to fly with <br></br> Friendship Airline
+            <p className={InfoDetailsCSS.boarding}>
+              You've been invited to fly with <br></br> ✈Friendship Airline
             </p>
           </div>
           <div className={InfoDetailsCSS.info}>
@@ -49,7 +49,7 @@ function App() {
         <div className={RespondSectionCSS.all}>
           <div className={RespondDetailsCSS.deco}>
             <p className={RespondDetailsCSS.airline}>
-              Boarding Pass <br></br>Friendship Airline ✈
+              Boarding Pass <br></br>✈Friendship Airline
             </p>
           </div>
           <Attend onNewAttendent={handleNewAttendent} />

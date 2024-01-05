@@ -6,4 +6,7 @@
   justify-content: space-evenly;
   background-color: #ececec;
   border-radius: 0 0 10em 0;
+  font-family: "Playpen Sans", cursive;
+  font-weight: 400;
+  font-size: 15px;
 }

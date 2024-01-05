@@ -6,4 +6,13 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  font-family: "Playpen Sans", cursive;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 650px) {
+  .root {
+    border-bottom: 1px solid black;
+    border-right: 0px solid black;
+  }
 }

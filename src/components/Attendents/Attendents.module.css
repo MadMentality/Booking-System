@@ -1,18 +1,16 @@
 .root {
   flex: 1 1 33%;
-  border-right: 1px solid black;
   height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-content: center;
   font-family: "Playpen Sans", cursive;
   font-weight: 400;
 }
 
 @media only screen and (max-width: 650px) {
   .root {
-    border-bottom: 1px solid black;
-    border-right: 0px solid black;
+    margin-bottom: 10px;
   }
 }

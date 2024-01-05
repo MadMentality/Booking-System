@@ -21,6 +21,14 @@
   border-radius: 0 0 0 10em;
 }
 
+.boarding {
+  color: #eef5ff;
+  flex: 0 0 60%;
+  font-family: "Playpen Sans", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 650px) {
   .info {
     flex-direction: column;

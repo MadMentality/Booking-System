@@ -27,7 +27,7 @@ export function Attend({ onNewAttendent }) {
   return (
     <div className={styles.root}>
       <div>
-        <label htmlFor="name">Enter Your Name:</label>
+        <label htmlFor="name">Enter Your Name: </label>
         <input
           id="name"
           type="text"

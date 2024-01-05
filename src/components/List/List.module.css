@@ -1,4 +1,6 @@
 .root {
   display: inline;
   padding: 10px;
+  font-family: "Playpen Sans", cursive;
+  font-weight: 400;
 }

@@ -1,8 +1,0 @@
-.root {
-  flex: 1 1 33%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-}

@@ -1,4 +1,4 @@
-import styles from "./Attendemts.module.css";
+import styles from "./Attendents.module.css";
 import { List } from "../List/List";
 
 export function Attendents({ newFakeAttendents }) {
