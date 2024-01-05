@@ -1,0 +1,9 @@
+.root {
+  flex: 1 0 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ececec;
+  border-radius: 0 0 10em 0;
+}

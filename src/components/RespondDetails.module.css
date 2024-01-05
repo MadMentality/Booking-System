@@ -4,6 +4,7 @@
   flex: 1 0 25%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .respond {
@@ -16,19 +17,12 @@
   border-radius: 0 0 10em 0;
 }
 
-.inline {
-  display: inline;
-  padding: 10px;
-}
 
 .boarding {
-  font-size: 2.5rem;
   color: #eef5ff;
   flex: 0 0 60%;
 }
 
 .airline {
-  flex: 0 0 30%;
-  font-size: 1.5rem;
   color: #eef5ff;
 }
