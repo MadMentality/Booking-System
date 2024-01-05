@@ -6,17 +6,21 @@ export function Attendents({ newFakeAttendents }) {
     <div className={styles.root}>
       <p>BOARDING LIST:</p>
       <div>
-        {newFakeAttendents.map((ppl) => (
-          <List ppl={ppl.name} key={ppl.name} />
-        ))}
+        <ul className={styles.list}>
+          {newFakeAttendents.map((ppl) => (
+            <List ppl={ppl.name} key={ppl.name} />
+          ))}
+        </ul>
       </div>
       <p>NOT YET RESPONDED:</p>
       <div>
-        {newFakeAttendents
-          .filter((ppl) => !ppl.responsed)
-          .map((ppl) => (
+        <ul className={styles.list}>
+          {newFakeAttendents
+            .filter((ppl) => !ppl.responsed)
+            .map((ppl) => (
             <List ppl={ppl.name} />
           ))}
+        </ul>
       </div>
     </div>
   );

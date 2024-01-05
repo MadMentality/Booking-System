@@ -19,6 +19,7 @@
   align-items: center;
   background-color: #ececec;
   border-radius: 0 0 0 10em;
+  overflow: hidden;
 }
 
 .boarding {
